@@ -1,0 +1,161 @@
+header {
+    background-color: #FED100;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__tittle  {
+font-weight: 600;
+font-size: 30px;
+color:#333333;
+}
+
+
+.nav__menu a {
+margin: 30px;
+text-decoration: none;   
+font-style: normal;
+font-size: 18px;
+color: #333333;
+font-weight: 500;
+
+}
+
+.nav__menu a:hover {
+    color:#FF352B;
+}
+
+.nav__number {
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #333333;
+}
+
+.nav__number a {
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #333333;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin:30px 0;
+    
+}
+
+.main__text {   
+width:50%;
+}
+.main__img {
+    width: 70%;
+    /* position: absolute;
+    width: 553px;
+    height: 629px;
+    left: 1023px;
+    top: 21px; */
+}
+
+.main__text h1{
+    font-size: 70px;
+    line-height: 105.4%;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.main__text h2{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #333333;
+}
+
+
+.main__button {
+    position: absolute;
+    width: 314px;
+    height: 70px;
+    top: 340px;
+    background:#FF352B;;
+    font-weight: 600;
+    font-size:24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F2F2F2;;
+    border-style: none;
+    z-index: 5;
+
+}
+
+.main__button:hover {
+    background: #FF772B;
+    transition-duration:0.5s;
+    
+}
+    
+.main__button-border {
+    position: relative;
+    z-index: 1;
+    width: 311px;
+    height: 60px;
+    left: 13px;
+    top: 399px;
+    top: 33px;
+    border: 2px solid #F2F2F2;
+    height: 72px;
+    margin-bottom: 77px;
+}
+
+.main__button:hover + .main__button-border {
+background: #F2F2F2;
+border: 2px solid #F2F2F2;
+
+}
+
+.main__items {
+display: flex;  
+justify-content: space-between;
+width: 56%;
+align-items: center;
+
+}
+
+.main__items p {
+font-size: 16px;
+line-height: 21px;
+color: #333333;
+padding-left: 10px;
+
+}
+
+.main__items-list1 {
+    display: flex;
+    align-items: center;
+}
+.main__items-list2 {
+    display: flex;
+    align-items: center;
+}
+.main__items-list3 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* .main__img img {
+    object-fit: cover;
+    width: 553px;
+    height: 629px;left: 1023px;
+top: 21px;
+} */
