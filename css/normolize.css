@@ -1,3 +1,12 @@
+:root {
+--white:#FFFFFF;
+--yellow:#FED100;
+--red: #FF352B;
+--dark-gray:#333333;
+--white-smoke:#F2F2F2;
+--orange:#FF772B;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +14,9 @@
 }
 body {
 font-family: Montserrat;
-font-size: 16px;
+/* font-size: 16px; */
 box-sizing: border-box;
+font-size: 100%;
 
 }
 
@@ -19,6 +29,11 @@ box-sizing: border-box;
 ol, ul {
 	list-style: none;
 }
+a,
+  a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -52,8 +67,34 @@ button,
 input,
 select,
 textarea {
+    cursor: pointer;
     font-size: 100%; /* 1 */
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
 }
+
+
+  footer,
+  nav,
+    header,
+    aside {
+        display: block;
+    }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  img {
+    vertical-align: top;
+  } 
