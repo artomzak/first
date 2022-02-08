@@ -1,0 +1,102 @@
+:root {
+--white:#FFFFFF;
+--yellow:#FED100;
+--red: #FF352B;
+--dark-gray:#333333;
+--white-smoke:#F2F2F2;
+--orange:#FF772B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: Montserrat;
+/* font-size: 16px; */
+box-sizing: border-box;
+font-size: 100%;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 1rem;
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+a,
+  a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+button,
+input,
+select,
+textarea {
+    cursor: pointer;
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+
+  footer,
+  nav,
+    header,
+    aside {
+        display: block;
+    }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  img {
+    vertical-align: top;
+  } 
