@@ -1,4 +1,4 @@
-.prices__tittle {
+.prices__tittle h1 {
   color:var(--dark-gray);
   text-align: center;
   font-size: 2rem;
@@ -7,7 +7,7 @@
 .prices__subtitle {
   color:var(--dark-gray);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 
@@ -101,8 +101,7 @@
   min-width: 18.75rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  
-  
+  left: 50%; transform: translate(-50%, 0)
 }
 
 .prices-dropdown__content p {
@@ -118,26 +117,39 @@
 .prices-dropdown__button {position: relative;}
 
 @media (max-width:1200px) {
-  .prices-card {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
   .prices__colom, .prices__colom-focused {
-    border: 9px solid var(--gray);
+    border: 1px solid var(--gray); 
+    padding: 3.12rem 0;
   }
 }
+
+@media (max-width:930px) {
+.prices-card {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:center;
+}
+.prices__colom, .prices__colom-focused {
+  padding: 3.12rem 10rem;
+  margin-bottom: 1rem;
+}
+}
+
 @media (max-width:768px) {
+  .prices__tittle h1 {
+    margin:4rem 0rem 2rem;
+  }
 .prices__colom {display: none;}
 .prices__colom-focused{
   background: var(--white-gray);
   border: 1px solid var(--gray);
+  width:100%;
+  padding: 3.12rem;
 }
-.prices-dropdown{display: block;}
+.prices-dropdown{display: block;};
 }
-.prices-dropdown__button {text-decoration: underline; text-underline-offset: 1rem;}
 
-
-@media(max-width:400px) {
+@media (max-width:400px) {
   .prices__colom-focused{
     width:100%;
   }
@@ -147,5 +159,5 @@
   .prices-card__tittle h2 {
     font-size: 1.1rem;
   }
-  .prices-dropdown__button{text-decoration: underline; text-underline-offset: 0rem;}
 }
+

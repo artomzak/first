@@ -175,10 +175,10 @@ text-align: center;
 }
 
 
-@media all and (max-width:1090px) {
-		.container {
+@media  (max-width:1090px) {
+		/* .container {
 				max-width:49.3rem;
-		}
+		} */
 		.main {
 				justify-content: center;
 		}
