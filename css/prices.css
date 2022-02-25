@@ -2,7 +2,7 @@
   color:var(--dark-gray);
   text-align: center;
   font-size: 2rem;
-  margin: 8rem 0rem 2rem;
+  margin: 5rem 0rem 2rem;
 }
 .prices__subtitle {
   color:var(--dark-gray);
@@ -131,7 +131,10 @@
 }
 .prices__colom, .prices__colom-focused {
   padding: 3.12rem 10rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+.prices__tittle h1 {
+  margin:4rem 0rem 2rem;
 }
 }
 
