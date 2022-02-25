@@ -1,0 +1,208 @@
+.auropark__tittle  h1 {
+  color:var(--dark-gray);
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+
+}
+
+.autopark__subtittle h2 {
+  color:var(--dark-gray);
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.autopark__menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.autopark__button {
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
+  transition: 0.5s;
+  margin: 0 0 5rem 0;
+}
+
+.autopark__button:hover{
+  border: 1px solid var(--yellow);
+}
+
+.autopark__main {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.autopark__main-second , .autopark__main-third {
+  display: flex;
+}
+.autopark__maintittle {
+  font-size: 1.5rem;
+  color:var(--dark-gray);
+  margin: 0 0 2rem 0;
+}
+
+.autopark__colomn {
+  flex:0 1 50%;
+  padding: 0 0 0 8rem;
+}
+.autopark__cardprice {
+  display: flex;
+  gap:1rem;
+  margin: 0 0 2.5rem 0;
+}
+
+.autopark__link {
+  padding: 1rem 5rem;
+	font-size: 1.5rem;
+	background-color: var(--yellow);
+	cursor: pointer;
+	color: var(--dark-gray);
+  transition: 0.5s;
+}
+
+.autopark__link:hover {
+  box-shadow: 0px 4px 24px var(--yellow);
+}
+
+.autopark__img img {
+width:100%;
+}
+
+.autopark__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+}
+
+.autopark__bottom-tittle {
+  font-size: 1.5rem;
+  color:var(--dark-gray);
+}
+
+.autopark__bottom-button {
+  padding: 1rem 7rem;
+	font-size: 1.5rem;
+	background-color: var(--yellow);
+	cursor: pointer;
+	color: var(--dark-gray);
+  transition: 0.5s;
+}
+
+.autopark__bottom-button:hover {
+  box-shadow: 0px 4px 24px var(--yellow);
+  color:var(--white);  
+}
+.autopark__bottom {
+  display: none;
+}
+.autopark__colomn-second {
+  flex:0 1 50%;
+  padding: 0 0 0 8rem;
+  display: none;
+  
+}
+
+.autopark__colomn-third {
+  flex:0 1 50%;
+  padding: 0 0 0 8rem;
+  display: none;
+}
+
+
+.radio__button {
+  display: flex;
+  gap:1rem;
+}
+
+input {
+  appearance: none;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--dark-gray);
+  transition: 0.2s all linear;
+  outline: none;
+  position: relative;
+  top: 4px;
+}
+  input:checked {
+  border: 2px solid var(--yellow);
+}
+
+@media (max-width:1200px) {
+  .autopark__colomn {
+    padding: 0 0 0 3rem;
+  }
+}
+
+@media (max-width:1000px) {
+  .autopark__colomn {
+padding: 0 0 0 1rem;
+  }
+}
+
+@media (max-width:960px) {
+  .autopark__button {
+  border:none;
+  text-decoration: underline;
+  }
+  .autopark__button:hover {
+    text-decoration-color: var(--yellow);
+  }
+
+  .autopark__maintittle {
+    display:none;
+  }
+  .autopark__cardprice {
+    display:none;
+  }
+  .autopark__link {
+    display: none;
+  }
+  .autopark__main {
+    display: block;
+    margin-bottom: 0rem;
+  }
+  .autopark__colomn {
+    flex:0 0 auto;
+    padding: 0px;
+    margin:0 auto;
+  }
+  .autopark__img  {
+    width:100%;
+    }
+  .autopark__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  margin-bottom: 4rem;
+    }
+}
+
+@media (max-width:580px) {
+  .autopark__menu {
+    gap:0rem;
+
+  }
+  .autopark__button {
+    padding: 1rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+}
+
+@media (max-width:367px) {
+  .autopark__bottom-tittle {
+    font-size: 1.3rem;
+  }
+  .autopark__bottom-button {
+    padding:1rem 4rem;
+  }
+}
