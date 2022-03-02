@@ -1,5 +1,6 @@
 .review {
   background-color:var(--yellow);
+  margin-bottom: 5rem;
 }
 
 .review__tittle h2 {
