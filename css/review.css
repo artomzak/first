@@ -103,4 +103,5 @@ background-color:var(--white);
   .review__item-tittle {
     font-size: 0.9rem;
   }
+  .review {margin-bottom: 4rem;}
 }
