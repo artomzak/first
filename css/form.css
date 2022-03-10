@@ -231,6 +231,34 @@ time {
     display: none;
   }
 
+  .sixth-block__checkbox-js {display: flex; gap: 1rem;}
+
+  .arrow {
+    position: relative;
+    cursor: pointer;
+  }
+  
+
+  .arrow-top {  
+    transform: translate(-29%) rotate(-45deg);  width: 15px;
+    height: 15px;
+    border-top: 2px solid var(--dark-gray);
+    border-right: 2px solid var(--dark-gray);
+    position: relative;
+    top: 15px; } 
+
+  .arrow-bottom { 
+    transform: translate(281%) rotate(134deg);
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid var(--dark-gray);
+    border-right: 2px solid var(--dark-gray);
+    position: relative;
+    top: 6px;
+    left: -7%;
+  }   
+
+
 
   @media (max-width:768px) {
 time , .sixth-block__maintittle {display: none;}
