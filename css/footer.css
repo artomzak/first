@@ -70,6 +70,7 @@ footer {background-color:var(--yellow)}
 
 @media (max-width:996px) {
   .footer__tittle-colomn {display: none;}
+  iframe {height:100%}
 }
 
 @media (max-width:768px) {
