@@ -159,7 +159,7 @@ border-color: var(--yellow);
 }
 
 time {
-  font-size: 96px;
+  font-size: 92px;
   color:var(--dark-gray);
 }
 
@@ -257,9 +257,10 @@ time {
     top: 6px;
     left: -7%;
   }   
+  
+  
 
-
-
+  
   @media (max-width:768px) {
 time , .sixth-block__maintittle {display: none;}
 .sixth-block__maintittle-mobile {display: block; font-size: 1rem;}

@@ -65,7 +65,10 @@
 .review__button:hover {
 background-color:var(--white);
 }
-
+.link-text {
+  text-decoration: underline;
+  color:var(--dark-gray);
+}
 
 @media (max-width:650px) {
 .review__item {display: none;}

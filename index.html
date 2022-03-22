@@ -18,17 +18,21 @@
       <div class="container">
         <div class="nav">
           <h1 id="main">MOVEE</h1>
-
-        <div class="burger">
-          <span class="burger__line  burger__line_first"></span>
-          <span class="burger__line burger__line_second"></span>
-          <span class="burger__line burger__line_third"></span>
-          <span class="burger__line burger__line_four"></span>
-        </div>
-
-          <!-- <div class="menu__mobile burger">
-            <i class="fas fa-bars"></i>
-          </div> -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <div class="menu">
+          <nav>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#price">Цена</a></li>
+            <li><a href="#autopark">Автопарк</a></li>
+            <li><a href="#rewiev">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li> 
+            <div id="test"></div>
+          </nav>
+        </div>      
           <nav class="nav__menu">
             <ul>
               <li><a href="#">Цены</a></li>
@@ -330,7 +334,7 @@
               проявил себя как компетентный и профессиональный сотрудник, за что
               ему огромное...
             </p>
-            <span class="review__card-read">Читать полностью</span>
+            <span class="review__card-read">Читать полностью...</span>
           </div>
           <div class="review__item-main">
             <div class="review__item-tittle">Светлана Васильевна</div>
@@ -349,7 +353,10 @@
               час). Водитель заранее позвонил, предупредил, что задерживается.
               Когда....
             </p>
-            <span class="review__card-read">Читать полностью</span>
+            <a href="javascript:showText();" class="link-text" id="link-Text">Читать Полностью...</a>
+            <div id="showMore" style="display: none;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim ea reiciendis sapiente obcaecati recusandae eius eum laborum sit nam quae, doloribus voluptatem pariatur ratione maiores quasi voluptas perferendis dolorum quod placeat laboriosam qui! Laboriosam iure, eaque, necessitatibus quod velit, iusto repellat ducimus dolore consequuntur nostrum ullam natus! Qui, odio.</p>
+          </div>
           </div>
           <div class="review__item">
             <div class="review__item-tittle">Ольга Петрова</div>
@@ -367,7 +374,7 @@
               от их конкурентов. Упаковали все качественно и быстро. Все вещи
               приехали в сохранности. Особая благодарность Александру за его...
             </p>
-            <span class="review__card-read">Читать полностью</span>
+            <span class="review__card-read">Читать полностью...</span>
           </div>
         </div>
         <button class="review__button">Все отзывы</button>
@@ -391,6 +398,7 @@
                 type="text"
                 name="user_name"
                 value=""
+                id="username"
               />
             </div>
             <div>
@@ -399,7 +407,7 @@
                 type="tel"
                 name="user_tel"
                 value=""
-              />
+                id="usertel"           />
             </div>
           </div>
           <div class="sixth-block__city">
@@ -466,8 +474,8 @@
             </div>
           </div>
           </div>
-          <div class="sixth-block__colom"> 
-              <time>05:37:25</time>
+          <div class="sixth-block__colom">
+              <time></time>
             <div class="sixth-block__colomn">
                 <button class="sixth-block__button">Заказать со скидой</button>
                 <button class="sixth-block__button-mobile">Перезвоните мне</button>
@@ -506,10 +514,10 @@
 							<div class="footer__colomn">
 								<div class="footer__tittle-colomn">Мы в соцсетях</div>
 								<div class="footer__social">
-								<a target="_blank" href="https://www.youtube.com/"> <img src="./image/youtube.png" alt="youtube"></a>
-								<a target="_blank" href="https://vk.com/"> <img src="./image/vk.png" alt="Vkontakt"></a>
-								<a target="_blank" href="https://www.facebook.com/"> <img src="./image/facebook.png" alt="Facebook"></a>
-								<a target="_blank" href="https://www.instagram.com/"> <img src="./image/instagram.png" alt="instagram"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.youtube.com/"> <img src="./image/youtube.png" alt="youtube"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://vk.com/share.php?"> <img src="./image/vk.png" alt="Vkontakt"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.facebook.com/share.php?"> <img src="./image/facebook.png" alt="Facebook"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.instagram.com/"> <img src="./image/instagram.png" alt="instagram"></a>
 								</div>
                 <div class="footer__tel">8 (029)-999-12-13</div>
                 <span class="footer__button">Обратный звонок</span>
