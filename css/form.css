@@ -259,6 +259,39 @@ time {
   }   
   
   
+  .city-colomn {
+    display: flex;
+    padding: 0 0 0 26rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    }
+    .city__colomn {
+    display: flex;
+    padding: 0 0 0 26rem;
+    margin-bottom: 3rem;
+    }
+
+
+    .city__colomn input {
+      outline: none;
+      appearance: none;
+      border: none;
+      border-bottom: 1px solid var(--dark-gray);
+      max-width: 300px;
+      width: 100%;
+      padding: 1rem 7rem 1rem 0rem;
+    transition: 0.5s;
+    }
+
+
+    .city__colomn input[type="text"]:focus , input[type="tel"]:focus{
+      border: 1px solid var(--dark-gray);
+      width: 100%;
+      box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 3px -2px 39px 18px rgba(0,0,0,0.31);
+      }
+
 
   
   @media (max-width:768px) {

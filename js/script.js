@@ -84,20 +84,83 @@ const x = setInterval(function() {
 console.log(Share)
 
 
-
-
-
+//6 Отзывы
+function readAll() {
+  var ele = document.getElementById("contentSpoiler");
+  var text = document.getElementById("linkSpoiler");
+  if(ele.style.display == "block") {
+  ele.style.display = "none";
+  text.innerHTML = "Читать полностью...";
+  }
+  else {
+  ele.style.display = "block";
+  text.innerHTML = "Скрыть";
+  }
  
-// function showText() {
-//   var ele = document.getElementById("showMore");
-//   var text = document.getElementById("link-Text");
-  
-//   if(ele.style.display == "block") {
-//   ele.style.display = "none";
-//   text.innerHTML = "Читать Полностью...";
-//   }
-//   else {
-//   ele.style.display = "block";
-//   text.innerHTML = "Скрыть";
-//   }
-//   } 
+  } 
+
+  function readReview() {
+    var element = document.getElementById("content");
+    var texta = document.getElementById("link");
+    if(element.style.display == "block") {
+      element.style.display = "none";
+      texta.innerHTML = "Читать полностью...";
+    }
+    else {
+      element.style.display = "block";
+      texta.innerHTML = "Скрыть";
+    }
+  }
+
+  function readElse() {
+    var contentElse = document.getElementById("contentElse");
+    var linkElse = document.getElementById("linkElse");
+    if(contentElse.style.display == "block") {
+      contentElse.style.display = "none";
+      linkElse.innerHTML = "Читать полностью...";
+    }
+    else {
+      contentElse.style.display = "block";
+      linkElse.innerHTML = "Скрыть";
+    }
+
+  }
+
+
+
+// 7. Cлайдер
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function minusSlide() {
+  showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("autopark__content");
+  let dots = document.getElementsByClassName("autopark__button");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+      slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
+}
+

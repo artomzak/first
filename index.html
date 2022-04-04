@@ -182,84 +182,90 @@
           <h2>10 видов автомобилей от 800 кг до 10 тонн</h2>
         </div>
         <div class="autopark__menu">
-          <button class="autopark__button">Газели</button>
-          <button class="autopark__button">Каблуки</button>
-          <button class="autopark__button">Грузовики</button>
+          <button class="autopark__button"  onclick="currentSlide(1)" >Газели</button>
+          <button class="autopark__button" onclick="currentSlide(2)">Каблуки</button>
+          <button class="autopark__button" onclick="currentSlide(3)">Грузовики</button>
         </div>
-        <div class="autopark__main">
-          <div class="autopark__colomn">
-            <div class="autopark__maintittle">Газель 3 метра</div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
+        <div class="slider">
+          <div class="autopark__content">
+            <div class="autopark__main">
+              <div class="autopark__colomn">
+                <div class="autopark__maintittle">Газель 3 метра</div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Ширина 2 м</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Высота 2 м</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Объем 16 м³</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Грузоподъемность 1,5 т</div>
+                </div>
+                <span class="autopark__link">Заказать</span>
               </div>
-              <div class="autopark__text">Ширина 2 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
+              <div class="autopark__colomn">
+                <img
+                  class="autopark__img"
+                  src="./image/first_car.png"
+                  alt="truck"
+                />
               </div>
-              <div class="autopark__text">Высота 2 м</div>
             </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Объем 16 м³</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Грузоподъемность 1,5 т</div>
-            </div>
-            <span class="autopark__link">Заказать</span>
           </div>
-          <div class="autopark__colomn">
-            <img
-              class="autopark__img"
-              src="./image/first_car.png"
-              alt="truck"
-            />
+     <div class="autopark__content">
+      <div class="autopark__main-second">
+        <div class="autopark__colomn-second">
+          <div class="autopark__maintittle">Каблук 2 метра</div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Ширина 1.8 м</div>
           </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Высота 1.2 м</div>
+          </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Объем 8 м³</div>
+          </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Грузоподъемность 0.8 т</div>
+          </div>
+          <span class="autopark__link">Заказать</span>
         </div>
-        <div class="autopark__main-second">
-          <div class="autopark__colomn-second">
-            <div class="autopark__maintittle">Каблук 2 метра</div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Ширина 1.8 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Высота 1.2 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Объем 8 м³</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Грузоподъемность 0.8 т</div>
-            </div>
-            <span class="autopark__link">Заказать</span>
-          </div>
-          <div class="autopark__colomn-second">
-            <img
-              class="autopark__img"
-              src="./image/second_car.png"
-              alt="truck"
-            />
-          </div>
+        <div class="autopark__colomn-second">
+          <img
+            class="autopark__img"
+            src="./image/second_car.png"
+            alt="truck"
+          />
         </div>
+      </div>
+     </div>
+      <div class="autopark__content">
         <div class="autopark__main-third">
           <div class="autopark__colomn-third">
             <div class="autopark__maintittle">Грузовик 3 метра</div>
@@ -296,16 +302,22 @@
               alt="truck"
             />
           </div>
+         
         </div>
+        
+      </div>
+      <a class="prev" onclick="minusSlide()">&#10094;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a>
+
         <div class="autopark__bottom">
           <div class="autopark__bottom-tittle">Газель 3 метра/1.5тонны</div>
           <form>
             <div class="radio__button">
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
+              <input onclick="currentSlide(1)" type="radio" name="rb" />
+              <input onclick="currentSlide(2)"  type="radio" name="rb" />
+              <input onclick="currentSlide(3)" type="radio" name="rb" />
+              <input onclick="currentSlide(1)" type="radio" name="rb" />
+              <input onclick="currentSlide(2)" type="radio" name="rb" />
             </div>
           </form>
           <div class="autopark__bottom-button">Заказать</div>
@@ -334,7 +346,10 @@
               проявил себя как компетентный и профессиональный сотрудник, за что
               ему огромное...
             </p>
-            <span class="review__card-read">Читать полностью...</span>
+            <span onclick="readAll()"  id="linkSpoiler">Читать полностью...</span> 
+            <div id="contentSpoiler" style="display: none;">
+              <p>Однако политические учения Гоббса иллюстрирует современный англо-американский тип политической культуры. Капиталистическое мировое общество случайно. Политическое учение Августина доказывает коллапс Советского Союза. Социализм символизирует либерализм, указывает в своем исследовании К.Поппер. Идея правового государства, как бы это ни казалось парадоксальным, традиционно вызывает антропологический коллапс Советского Союза, что неминуемо повлечет эскалацию напряжения в стране. Международная политика иллюстрирует гносеологический либерализм.</p>
+              </div>
           </div>
           <div class="review__item-main">
             <div class="review__item-tittle">Светлана Васильевна</div>
@@ -353,10 +368,9 @@
               час). Водитель заранее позвонил, предупредил, что задерживается.
               Когда....
             </p>
-            <a href="javascript:showText();" class="link-text" id="link-Text">Читать Полностью...</a>
-            <div id="showMore" style="display: none;">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim ea reiciendis sapiente obcaecati recusandae eius eum laborum sit nam quae, doloribus voluptatem pariatur ratione maiores quasi voluptas perferendis dolorum quod placeat laboriosam qui! Laboriosam iure, eaque, necessitatibus quod velit, iusto repellat ducimus dolore consequuntur nostrum ullam natus! Qui, odio.</p>
-          </div>
+            <span  onclick="readReview()"  id="link">Читать полностью...</span>  <div id="content" style="display: none;">
+              <p>Однако политические учения Гоббса иллюстрирует современный англо-американский тип политической культуры. Капиталистическое мировое общество случайно. Политическое учение Августина доказывает коллапс Советского Союза. Социализм символизирует либерализм, указывает в своем исследовании К.Поппер. Идея правового государства, как бы это ни казалось парадоксальным, традиционно вызывает антропологический коллапс Советского Союза, что неминуемо повлечет эскалацию напряжения в стране. Международная политика иллюстрирует гносеологический либерализм.</p>
+              </div>
           </div>
           <div class="review__item">
             <div class="review__item-tittle">Ольга Петрова</div>
@@ -374,7 +388,9 @@
               от их конкурентов. Упаковали все качественно и быстро. Все вещи
               приехали в сохранности. Особая благодарность Александру за его...
             </p>
-            <span class="review__card-read">Читать полностью...</span>
+            <span  onclick="readElse()" id="linkElse">Читать полностью...</span>  <div id="contentElse" style="display: none;">
+              <p>Однако политические учения Гоббса иллюстрирует современный англо-американский тип политической культуры. Капиталистическое мировое общество случайно. Политическое учение Августина доказывает коллапс Советского Союза. Социализм символизирует либерализм, указывает в своем исследовании К.Поппер. Идея правового государства, как бы это ни казалось парадоксальным, традиционно вызывает антропологический коллапс Советского Союза, что неминуемо повлечет эскалацию напряжения в стране. Международная политика иллюстрирует гносеологический либерализм.</p>
+              </div>
           </div>
         </div>
         <button class="review__button">Все отзывы</button>
@@ -423,7 +439,7 @@
               <option value="Grodno">Гродненская</option>
               <option value="Mogilev">Могилевская</option>
             </select>
-            <select name="city">
+            <select name="city" >
               <option value="Minsk">Минск</option>
               <option value="Vitebsk">Витебск</option>
               <option value="Gomel">Гомель</option>
@@ -432,6 +448,9 @@
               <option value="Mogilev">Могилев</option>
             </select>
           </div>
+      <!-- <div class="city__colomn">
+            <input type='text' placeholder="Добавить город" id='cityvalue'/>   
+      </div> -->
           <div class="sixth-block__order-pay">
             <h2 class="order-pay__tittle">Способ оплаты</h2>
             <div class="order-pay__radio">

@@ -68,7 +68,14 @@ background-color:var(--white);
 .link-text {
   text-decoration: underline;
   color:var(--dark-gray);
+  
 }
+
+#link, #linkElse , #linkSpoiler {
+  text-decoration: underline;
+
+}
+
 
 @media (max-width:650px) {
 .review__item {display: none;}
@@ -108,3 +115,9 @@ background-color:var(--white);
   }
   .review {margin-bottom: 4rem;}
 }
+
+
+#contentSpoiler , #content , #contentElse {
+  padding-top: 10px;};
+  
+  
