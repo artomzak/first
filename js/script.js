@@ -23,9 +23,9 @@ menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
   document.body.classList.toggle('_lock')
-  
 
 })
+
 
 //3. Таймер
 const countDownDate = new Date("May 5, 2022 12:00:00").getTime();
@@ -85,46 +85,46 @@ console.log(Share)
 
 
 //6 Отзывы
-function readAll() {
-  var ele = document.getElementById("contentSpoiler");
-  var text = document.getElementById("linkSpoiler");
-  if(ele.style.display == "block") {
-  ele.style.display = "none";
-  text.innerHTML = "Читать полностью...";
-  }
-  else {
-  ele.style.display = "block";
-  text.innerHTML = "Скрыть";
-  }
+// function readAll() {
+//   var ele = document.getElementById("contentSpoiler");
+//   var text = document.getElementById("linkSpoiler");
+//   if(ele.style.display == "block") {
+//   ele.style.display = "none";
+//   text.innerHTML = "Читать полностью...";
+//   }
+//   else {
+//   ele.style.display = "block";
+//   text.innerHTML = "Скрыть";
+//   }
  
-  } 
+//   } 
 
-  function readReview() {
-    var element = document.getElementById("content");
-    var texta = document.getElementById("link");
-    if(element.style.display == "block") {
-      element.style.display = "none";
-      texta.innerHTML = "Читать полностью...";
-    }
-    else {
-      element.style.display = "block";
-      texta.innerHTML = "Скрыть";
-    }
-  }
+//   function readReview() {
+//     var element = document.getElementById("content");
+//     var texta = document.getElementById("link");
+//     if(element.style.display == "block") {
+//       element.style.display = "none";
+//       texta.innerHTML = "Читать полностью...";
+//     }
+//     else {
+//       element.style.display = "block";
+//       texta.innerHTML = "Скрыть";
+//     }
+//   }
 
-  function readElse() {
-    var contentElse = document.getElementById("contentElse");
-    var linkElse = document.getElementById("linkElse");
-    if(contentElse.style.display == "block") {
-      contentElse.style.display = "none";
-      linkElse.innerHTML = "Читать полностью...";
-    }
-    else {
-      contentElse.style.display = "block";
-      linkElse.innerHTML = "Скрыть";
-    }
+//   function readElse() {
+//     var contentElse = document.getElementById("contentElse");
+//     var linkElse = document.getElementById("linkElse");
+//     if(contentElse.style.display == "block") {
+//       contentElse.style.display = "none";
+//       linkElse.innerHTML = "Читать полностью...";
+//     }
+//     else {
+//       contentElse.style.display = "block";
+//       linkElse.innerHTML = "Скрыть";
+//     }
 
-  }
+//   }
 
 
 
@@ -164,3 +164,33 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+
+
+
+window.onload = function() {
+  btn = document.querySelector('.btn');
+  text = document.querySelector('.text');
+  btn.onclick = function () {
+  text.classList.toggle('open');
+}
+  
+}
+
+
+
+let condition = "less";
+
+function toggleText()
+{
+    let text="Here is some text that I want added to the HTML file";
+    
+    if (condition == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "Скрыть";
+        condition = "more";
+    } else if (condition == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Читать полностью";
+        condition = "less"
+    }
+}
