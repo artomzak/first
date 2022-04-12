@@ -98,22 +98,6 @@ background-color:var(--white);
 }
 
 
-.text {
-	width: 300px;
-	display: none;
-}
-	
-.text.open {
-	display: block;
-  transition: all 1s ease;
-  
-}
-
-
-
-
-
-
 @media (max-width:948px) {
   .review__item-tittle {
     font-size: 1.2rem;

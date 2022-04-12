@@ -194,3 +194,11 @@ function toggleText()
         condition = "less"
     }
 }
+
+
+let list = document.querySelector('.list')
+list.addEventListener('click', e=> {
+  e.target.classList.toggle('show')
+  console.log(e.target)
+
+})
