@@ -8,14 +8,9 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/ebad86d32b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet"/>
+      <script  src="https://kit.fontawesome.com/ebad86d32b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -23,9 +18,21 @@
       <div class="container">
         <div class="nav">
           <h1 id="main">MOVEE</h1>
-          <div class="menu__mobile burger">
-            <i class="fas fa-bars"></i>
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+        <div class="menu">
+          <nav>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#price">Цена</a></li>
+            <li><a href="#autopark">Автопарк</a></li>
+            <li><a href="#rewiev">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li> 
+            <div id="test"></div>
+          </nav>
+        </div>      
           <nav class="nav__menu">
             <ul>
               <li><a href="#">Цены</a></li>
@@ -175,84 +182,90 @@
           <h2>10 видов автомобилей от 800 кг до 10 тонн</h2>
         </div>
         <div class="autopark__menu">
-          <button class="autopark__button">Газели</button>
-          <button class="autopark__button">Каблуки</button>
-          <button class="autopark__button">Грузовики</button>
+          <button class="autopark__button"  onclick="currentSlide(1)" >Газели</button>
+          <button class="autopark__button" onclick="currentSlide(2)">Каблуки</button>
+          <button class="autopark__button" onclick="currentSlide(3)">Грузовики</button>
         </div>
-        <div class="autopark__main">
-          <div class="autopark__colomn">
-            <div class="autopark__maintittle">Газель 3 метра</div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
+        <div class="slider">
+          <div class="autopark__content">
+            <div class="autopark__main">
+              <div class="autopark__colomn">
+                <div class="autopark__maintittle">Газель 3 метра</div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Ширина 2 м</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Высота 2 м</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Объем 16 м³</div>
+                </div>
+                <div class="autopark__cardprice">
+                  <div class="autopark__vector">
+                    <img src="./image/Vector.png" alt="#" />
+                  </div>
+                  <div class="autopark__text">Грузоподъемность 1,5 т</div>
+                </div>
+                <span class="autopark__link">Заказать</span>
               </div>
-              <div class="autopark__text">Ширина 2 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
+              <div class="autopark__colomn">
+                <img
+                  class="autopark__img"
+                  src="./image/first_car.png"
+                  alt="truck"
+                />
               </div>
-              <div class="autopark__text">Высота 2 м</div>
             </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Объем 16 м³</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Грузоподъемность 1,5 т</div>
-            </div>
-            <span class="autopark__link">Заказать</span>
           </div>
-          <div class="autopark__colomn">
-            <img
-              class="autopark__img"
-              src="./image/first_car.png"
-              alt="truck"
-            />
+     <div class="autopark__content">
+      <div class="autopark__main-second">
+        <div class="autopark__colomn-second">
+          <div class="autopark__maintittle">Каблук 2 метра</div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Ширина 1.8 м</div>
           </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Высота 1.2 м</div>
+          </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Объем 8 м³</div>
+          </div>
+          <div class="autopark__cardprice">
+            <div class="autopark__vector">
+              <img src="./image/Vector.png" alt="#" />
+            </div>
+            <div class="autopark__text">Грузоподъемность 0.8 т</div>
+          </div>
+          <span class="autopark__link">Заказать</span>
         </div>
-        <div class="autopark__main-second">
-          <div class="autopark__colomn-second">
-            <div class="autopark__maintittle">Каблук 2 метра</div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Ширина 1.8 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Высота 1.2 м</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Объем 8 м³</div>
-            </div>
-            <div class="autopark__cardprice">
-              <div class="autopark__vector">
-                <img src="./image/Vector.png" alt="#" />
-              </div>
-              <div class="autopark__text">Грузоподъемность 0.8 т</div>
-            </div>
-            <span class="autopark__link">Заказать</span>
-          </div>
-          <div class="autopark__colomn-second">
-            <img
-              class="autopark__img"
-              src="./image/second_car.png"
-              alt="truck"
-            />
-          </div>
+        <div class="autopark__colomn-second">
+          <img
+            class="autopark__img"
+            src="./image/second_car.png"
+            alt="truck"
+          />
         </div>
+      </div>
+     </div>
+      <div class="autopark__content">
         <div class="autopark__main-third">
           <div class="autopark__colomn-third">
             <div class="autopark__maintittle">Грузовик 3 метра</div>
@@ -289,16 +302,22 @@
               alt="truck"
             />
           </div>
+         
         </div>
+        
+      </div>
+      <a class="prev" onclick="minusSlide()">&#10094;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a>
+
         <div class="autopark__bottom">
           <div class="autopark__bottom-tittle">Газель 3 метра/1.5тонны</div>
           <form>
             <div class="radio__button">
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
-              <input type="radio" name="rb" />
+              <input onclick="currentSlide(1)" type="radio" name="rb" />
+              <input onclick="currentSlide(2)"  type="radio" name="rb" />
+              <input onclick="currentSlide(3)" type="radio" name="rb" />
+              <input onclick="currentSlide(1)" type="radio" name="rb" />
+              <input onclick="currentSlide(2)" type="radio" name="rb" />
             </div>
           </form>
           <div class="autopark__bottom-button">Заказать</div>
@@ -326,8 +345,17 @@
               водителя газели Алексея. Были трудности с заездом во двор, он
               проявил себя как компетентный и профессиональный сотрудник, за что
               ему огромное...
+               <!-- <p  class="btn">Read More</p>  <p class="text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Строчка однажды раз рыбными гор языкового залетают всеми над толку осталось даль свое ipsum прямо, курсивных она свою одна это.</p> -->
             </p>
-            <span class="review__card-read">Читать полностью</span>
+            <div class="l">
+              <a  class="list" href="javascript:void(0);">Читать Полностью </a>
+              <p class="lo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, ipsam.</p>
+            </div>
+          
+            <!-- <span oncli ck="readAll()"  id="linkSpoiler">Читать полностью...</span> 
+            <div id="contentSpoiler" style="display: none;">
+              <p>Однако политические учения Гоббса иллюстрирует современный англо-американский тип политической культуры. Капиталистическое мировое общество случайно. Политическое учение Августина доказывает коллапс Советского Союза. Социализм символизирует либерализм, указывает в своем исследовании К.Поппер. Идея правового государства, как бы это ни казалось парадоксальным, традиционно вызывает антропологический коллапс Советского Союза, что неминуемо повлечет эскалацию напряжения в стране. Международная политика иллюстрирует гносеологический либерализм.</p>
+              </div> -->
           </div>
           <div class="review__item-main">
             <div class="review__item-tittle">Светлана Васильевна</div>
@@ -346,8 +374,9 @@
               час). Водитель заранее позвонил, предупредил, что задерживается.
               Когда....
             </p>
-            <span class="review__card-read">Читать полностью</span>
-          </div>
+            <p id="textArea"></p>
+            <a id="toggleButton" onclick="toggleText();" href="javascript:void(0);">Читать Полностью</a>
+          </div>  
           <div class="review__item">
             <div class="review__item-tittle">Ольга Петрова</div>
             <div class="review__item-subtittle">
@@ -364,7 +393,8 @@
               от их конкурентов. Упаковали все качественно и быстро. Все вещи
               приехали в сохранности. Особая благодарность Александру за его...
             </p>
-            <span class="review__card-read">Читать полностью</span>
+            <p id="textArea"><!-- This is where I want to additional text--></p>
+            <a id="toggleButton" onclick="toggleText();" href="javascript:void(0);">Читать Полностью</a>
           </div>
         </div>
         <button class="review__button">Все отзывы</button>
@@ -388,6 +418,7 @@
                 type="text"
                 name="user_name"
                 value=""
+                id="username"
               />
             </div>
             <div>
@@ -396,7 +427,7 @@
                 type="tel"
                 name="user_tel"
                 value=""
-              />
+                id="usertel"           />
             </div>
           </div>
           <div class="sixth-block__city">
@@ -412,7 +443,7 @@
               <option value="Grodno">Гродненская</option>
               <option value="Mogilev">Могилевская</option>
             </select>
-            <select name="city">
+            <select name="city" >
               <option value="Minsk">Минск</option>
               <option value="Vitebsk">Витебск</option>
               <option value="Gomel">Гомель</option>
@@ -421,6 +452,9 @@
               <option value="Mogilev">Могилев</option>
             </select>
           </div>
+      <!-- <div class="city__colomn">
+            <input type='text' placeholder="Добавить город" id='cityvalue'/>   
+      </div> -->
           <div class="sixth-block__order-pay">
             <h2 class="order-pay__tittle">Способ оплаты</h2>
             <div class="order-pay__radio">
@@ -433,8 +467,12 @@
             </div>
           </div>
           <div class="sixth-block__checkbox">
-            <h2 class="checkbox__tittle">Дополнительные услуги</h2>
-            <div class="checkbox-content">
+            <div class="sixth-block__checkbox-js">
+              <h2 class="checkbox__tittle">Дополнительные услуги</h2>
+              <div class="arrow arrow-top"></div>    
+              <div class="arrow arrow-bottom" style="display: none;"></div>   
+            </div>
+            <div class="checkbox-content" style="display: none;">
               <div>
                 <input type="checkbox" id="check" name="check" />
                 <label for="check">Вызов замерщика</label>
@@ -459,8 +497,8 @@
             </div>
           </div>
           </div>
-          <div class="sixth-block__colom"> 
-              <time>05:37:25</time>
+          <div class="sixth-block__colom">
+              <time></time>
             <div class="sixth-block__colomn">
                 <button class="sixth-block__button">Заказать со скидой</button>
                 <button class="sixth-block__button-mobile">Перезвоните мне</button>
@@ -499,17 +537,17 @@
 							<div class="footer__colomn">
 								<div class="footer__tittle-colomn">Мы в соцсетях</div>
 								<div class="footer__social">
-								<a target="_blank" href="https://www.youtube.com/"> <img src="./image/youtube.png" alt="youtube"></a>
-								<a target="_blank" href="https://vk.com/"> <img src="./image/vk.png" alt="Vkontakt"></a>
-								<a target="_blank" href="https://www.facebook.com/"> <img src="./image/facebook.png" alt="Facebook"></a>
-								<a target="_blank" href="https://www.instagram.com/"> <img src="./image/instagram.png" alt="instagram"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.youtube.com/"> <img src="./image/youtube.png" alt="youtube"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://vk.com/share.php?"> <img src="./image/vk.png" alt="Vkontakt"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.facebook.com/share.php?"> <img src="./image/facebook.png" alt="Facebook"></a>
+								<a onclick="Share.me(this);" target="_blank" href="https://www.instagram.com/"> <img src="./image/instagram.png" alt="instagram"></a>
 								</div>
                 <div class="footer__tel">8 (029)-999-12-13</div>
                 <span class="footer__button">Обратный звонок</span>
 							</div>
 						</div>
 					</div>
-				</footer>
+				</footer>      
     <script src="./js/script.js"></script>
   </body>
 </html>
